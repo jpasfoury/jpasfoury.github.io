@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Me</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		h1, h2 {
+			color: #333;
+			text-align: center;
+		}
+
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+			color: #333;
+		}
+
+		input[type="text"], input[type="tel"], input[type="email"], textarea {
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+		p {
+			text-align: center;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Feel Free to Leave Your Information&nbsp;</h1>
+
+	<form method="post">
+	  <label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone">
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+
+		<label for="comments">Comments:</label>
+		<textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+
+	<h2>Contact Me</h2>
+	<p>Email: <a href="mailto:jasfoury98@gmail.com">jasfoury98@gmail.com</a></p>
+	<p>Phone: <a href="tel:9198092149">(919) 809-2149</a></p>
+</body>
+</html>

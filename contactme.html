@@ -42,6 +42,12 @@
 			padding: 0 10px;
 			box-sizing: border-box;
 		}
+		/* Add your existing styles for nav here */
+		/* ... */
+		nav {
+			position: sticky;
+			top: 0;
+		}
 		body {
 			background-color: #f2f2f2;
 			font-family: Arial, sans-serif;
@@ -69,7 +75,7 @@
 
 		input[type="text"], input[type="tel"], input[type="email"], textarea {
 			width: 100%;
-			padding: 10px;
+		 padding: 10px;
 			border-radius: 5px;
 			border: 1px solid #ccc;
 			font-size: 16px;
@@ -123,7 +129,7 @@
 	<h1>Feel Free to Leave Your Information&nbsp;</h1>
 
 	<form method="post">
-	  <label for="name">Name:</label>
+	  <label for "name">Name:</label>
 		<input type="text" id="name" name="name">
 
 		<label for="phone">Phone Number:</label>
@@ -142,7 +148,17 @@
 	<p>Email: <a href="mailto:jasfoury98@gmail.com">jasfoury98@gmail.com</a></p>
 	<p>Phone: <a href="tel:9198092149">(919) 809-2149</a></p>
 </body>
-	 <div class="footer">
+<div class="footer">
   <img src="logo-black.png" alt="Company Logo">
 </div>
+<script>
+    window.addEventListener("scroll", function() {
+        var nav = document.querySelector("nav");
+        if (window.scrollY === 0) {
+            nav.style.display = "none"; // Hide the menu bar when at the top
+        } else {
+            nav.style.display = "block"; // Show the menu bar when scrolling down
+        }
+    });
+</script>
 </html>

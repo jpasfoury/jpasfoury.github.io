@@ -30,6 +30,7 @@
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
+			display: flex;
 		}
 
 		nav li {
@@ -59,8 +60,23 @@
 		}
 
 		.pdf-container {
-			max-width: 800px;
+			max-width: 80%;
+			/* Set container to 80% of viewport width */
 			margin: 0 auto;
+			text-align: center;
+		}
+
+		.pdf-container embed {
+			width: 100%;
+			/* Set PDF width to occupy full container width */
+			height: 600px;
+			/* Fixed height for PDF display */
+		}
+
+		.pdf-title {
+			margin-bottom: 20px;
+			font-size: 24px;
+			font-weight: bold;
 		}
 	</style>
 </head>
@@ -79,18 +95,18 @@
 	</nav>
 
 	<section class="resume-section">
-		<h1>Resume</h1>
 		<div class="pdf-container">
-			<!-- Embed your resume PDF using the <embed> tag here -->
-			<embed src="resume.pdf" type="application/pdf" width="100%" height="600px">
+			<div class="pdf-title">Cover Letter</div>
+			<!-- Embed your cover letter PDF using the <embed> tag here -->
+			<embed src="cover_letter.pdf" type="application/pdf">
 		</div>
 	</section>
 
 	<section class="resume-section">
-		<h1>Cover Letter</h1>
 		<div class="pdf-container">
-			<!-- Embed your cover letter PDF using the <embed> tag here -->
-			<embed src="cover_letter.pdf" type="application/pdf" width="100%" height="600px">
+			<div class="pdf-title">Resume</div>
+			<!-- Embed your resume PDF using the <embed> tag here -->
+			<embed src="resume.pdf" type="application/pdf">
 		</div>
 	</section>
 

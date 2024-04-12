@@ -1,171 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Resume</title>
 	<style>
-		margin-top: 10px; /* Add 50 pixels of margin on top */
+		body {
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
 		nav {
-			margin-top: 10px; /* Add 50 pixels of margin on top */
+			background-color: #333;
+			color: #fff;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			background-color: white;
-			padding: 10px 20px;
-			height: 50px;
-			width: 100%;
+			padding: 10px;
 			position: fixed;
 			top: 0;
 			left: 0;
+			width: 100%;
 			z-index: 1;
 		}
+
 		nav ul {
-			list-style: none;
-			display: flex;
+			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			height: 100%;
 		}
+
 		nav li {
 			margin: 0 10px;
-			height: 100%;
 		}
+
 		nav a {
-			color: black;
+			color: #fff;
 			text-decoration: none;
 			font-size: 14px;
 			font-weight: bold;
 			text-transform: uppercase;
 			letter-spacing: 1px;
-			height: 100%;
-			display: flex;
-			align-items: center;
-			padding: 0 10px;
-			box-sizing: border-box;
-		}
-		body {
-			font-family: Arial, Helvetica, sans-serif;
-			margin: 0;
-			padding: 0;
-			background-color: white;
+			padding: 10px;
+			transition: color 0.3s ease;
 		}
 
-		header {
-			 background-color: white;
-    color: black; /* Updated color property */
-    padding: 20px;
-    text-align: center;
+		nav a:hover {
+			color: #ffc107;
+			/* Change color on hover (example: yellow) */
 		}
 
-		h1 {
-			margin: 0;
-			font-size: 36px;
+		.resume-section {
+			padding-top: 70px;
+			/* Adjust to account for fixed navigation bar */
+			text-align: center;
 		}
 
-		.container {
+		.pdf-container {
 			max-width: 800px;
 			margin: 0 auto;
-			padding: 20px;
 		}
-
-		h2 {
-			font-size: 24px;
-			margin-top: 40px;
-		}
-
-		.section {
-			background-color: #fff;
-			padding: 20px;
-			margin-top: 20px;
-			border-radius: 5px;
-			box-shadow: 0 0 10px rgba(0,0,0,0.2);
-		}
-
-		.section h3 {
-			font-size: 20px;
-			margin: 0 0 10px 0;
-		}
-
-		.section p {
-			margin: 0;
-			font-size: 16px;
-			line-height: 1.5;
-		}
-
-		.section ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			font-size: 16px;
-			line-height: 1.5;
-		}
-
-		.section li {
-			margin-bottom: 5px;
-		}
-		.footer {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 10px;
-  height: 25px; /* Updated height to 25px */
-}
-
-.footer img {
-  max-width: 100%;
-  height: 200%;
-}
 	</style>
 </head>
+
 <body>
-<nav>
+
+	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="aboutme.html">About Me</a></li>
 			<li><a href="resume.html">Resume</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="certifications.html">Certifications</a></li>
 			<li><a href="contactme.html">Contact Me</a></li>
 		</ul>
 	</nav>
-	<header>
-		<h1>Jonathan Asfoury</h1>
-		<h3> Current Student at Wake Tech Community College&nbsp;</h3>
-	</header>
-	<div class="container">
-		<div class="section">
-		  <h2>Education</h2>
-			<ul>
-				<li><strong>Apex High School</strong> - Graduated in 2018</li>
-				<li><strong>Wake Technical Community College&nbsp;&nbsp;</strong> - Currently working towards my Associates Degree in Computer Science&nbsp; &nbsp; &nbsp; &nbsp;</li>
-			</ul>
-</div>
-	  <div class="section">
-	    <h2>Work Experience</h2>
-			<h3>Saleperson at Mark Jacobson Toyota (Feburary 2020 - April 2020)&nbsp;</h3>
-			<p>- Learned the different types and features of all of the vehicles offered.&nbsp;</p>
-		  <p>- Worked directly with potential customers to identify the vehicle that best meets their needs.&nbsp;</p>
-        <p>- Handled price negotiations, assisted with providing financing options and ultimately helped complete documents to finalize the vehicle purchase&nbsp;</p>
-        <p>&nbsp;</p>
-<h3>Office Manager &amp; Youth Counselor at The YMCA of the Triangle (April 2015 - March 2020)&nbsp; &nbsp;&nbsp;</h3>
-	    <p>- Promoted from Youth Counselor to Office Manager which included responsibilities such as making sure roll was taken and every child was accounted for, aiding in the hiring process of new counselors, making sure camp payments were made and leading productive staff meetings to help better the program.&nbsp;</p>
-	    <p>- Built relationships with children and parents to create a safe, fun and comfortable environment for children.</p>
-	    <p>- Created and led programs that were interesting and relatable for elementary school children</p>
-	    <p>&nbsp;</p>
-<h3>Associate Manager at Regal Cinemas (October 2016 - April 2018)&nbsp;</h3>
-<p>- Cross trained in multiple capacities including guest relations, ticket sales, concessions, and cleaning. </p>
-<p>- Helped to train and ensure that floor staff were properly equipped, and our theatre was fully staffed.</p>
-<p>- Interacted with unhappy customers to address concerns they were having. Attempted to resolve complaints in a favorable way that satisfied both the customer and the cinema.</p>
 
-      <div class="section">
-  <h2>Programming Languages I'm Learning:</h2>
-  <ul>
-    <li>HTML</li>
-    <li>Python</li>
-    <li>JavaScript</li>
-  </ul>
-</div>
-<div class="footer">
-  <img src="logo-black.png" alt="Company Logo">
-</div>
+	<section class="resume-section">
+		<h1>Resume</h1>
+		<div class="pdf-container">
+			<!-- Embed your resume PDF using the <embed> tag here -->
+			<embed src="resume.pdf" type="application/pdf" width="100%" height="600px">
+		</div>
+	</section>
+
+	<section class="resume-section">
+		<h1>Cover Letter</h1>
+		<div class="pdf-container">
+			<!-- Embed your cover letter PDF using the <embed> tag here -->
+			<embed src="cover_letter.pdf" type="application/pdf" width="100%" height="600px">
+		</div>
+	</section>
+
 </body>
-</html>
 
+</html>
